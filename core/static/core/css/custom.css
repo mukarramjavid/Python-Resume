@@ -1,0 +1,133 @@
+body {
+    background-color: #383838;
+    color: white;
+    /* font-family: Impact; */
+    /* font-weight: bolder; */
+}
+.st_font{
+    font-family: 'Satisfy', cursive;
+}
+.panel {
+    margin-top: 5rem;
+    border: 0;
+    background: #383838;
+    margin-left: 2rem;
+}
+
+.panel-default>.panel-heading {
+    background: #383838;
+}
+
+.nav-link {
+    font-size: 2rem;
+    color: white;
+}
+
+li a.nav-link:hover {
+    color: black;
+    transition: 0.5s;
+    background-color: #e9cd79;
+}
+a.nav-link.active{
+    color: black;
+    /* transition: 0.8s; */
+    background-color: #ffc107;
+    font-weight:bold;
+}
+
+
+.dn {
+    text-align: center;
+    color: white;
+}
+
+.img {
+    content: url("/static/core/images/pic.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.col-md-2 {
+    border-right: 1px solid yellow;
+    height: 100%;
+}
+
+.homeDp {
+    width: 150px;
+    height: 180px;
+    margin-top: 5rem;
+}
+
+.info {
+    text-indent: 80px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.infoText {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    /* padding: 14px 28px; */
+    font-size: 16px;
+    cursor: pointer;
+}
+.warning {
+    border-color: #ff9800;
+    color: orange;
+}
+
+.warning:hover {
+    background: #ff9800;
+    color: white;
+    transition: 0.5s;
+}
+
+.info_1 {
+    border-color: #2196F3;
+    color: dodgerblue
+}
+
+.info_1:hover {
+    background: #2196F3;
+    color: white;
+    transition: 0.5s;
+}
+
+/* Services & Skills */
+
+.ser,.skill,.contact{
+    color: orange;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    border-bottom: 1px solid yellow;
+}
+
+.ser-row,.skill-row{
+    margin-top: 5rem;
+}
+.i-color{
+    color:rgb(89, 177, 17);
+}
+.des-color{
+    color: silver;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    letter-spacing: 2rem;
+}

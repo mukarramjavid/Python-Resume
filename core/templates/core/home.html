@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block home %}
+<div class="row">
+  <div class="col-md-12 text-center">
+    <img src="{% static 'core/images/pic.jpg' %}" alt="img" class="img-thumbnail img-responsive homeDp" srcset="">
+  </div>
+  <div class="panel panel-default">
+
+    <div class="panel-body ">
+      <h2 class="st_font">Hello,</h2>
+      <div class="infoText">
+        <p class="info">I am <b style="color: #ff9800">Mukarram Javid </b>having 2 year experince of full-stack
+          development. I offer the technical expertise you are seeking for web developer position.</p>
+        <p class="">Since earning my bachoelor's degree in Computer Science from University of Engineering & Technology,
+          Lahore. I am having 2 years experince of ASP.NET MVC 5. Recently, I have completed my Final Year Project in
+          ASP.NET MVC 5 using Entity Framework 6. Now, I am learing Python framework 'Django'. </p>
+
+      </div>
+    </div>
+
+  </div>
+  {% comment %} <div class="col-md-8"></div> {% endcomment %}
+</div>
+{% comment %} Buttons {% endcomment %}
+<div class="row">
+  <div class="col-md-6 col-xs-6">
+  <a href="{% url 'contact' %}" class="btn warning pull-right" >Hire Me</a>
+ 
+  </div>
+  <div class="col-md-6 col-xs-6">
+  <a href="{% url 'contact' %}" class="btn info_1 pull-left" >Contact</a>
+  
+  </div>
+</div>
+
+
+{% endblock home %}

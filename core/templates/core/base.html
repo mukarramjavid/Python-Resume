@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  {% block coreCSS %}
+    <link rel="stylesheet" href="{% static 'core/css/custom.css' %}">
+  {% endblock coreCSS %}
+  
+  <title>Home</title>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+    {% comment %} Side Bar {% endcomment %}
+      <div class="col-md-2 col-xs-12 sidebar">
+        {% comment %} Include side bar from sidebar.html {% endcomment %}
+      {% include 'core/sidebar.html' %}
+      </div>
+        {% comment %} Declaring blocks {% endcomment %}
+      <div class="col-md-10 col-xs-12">
+      {% comment %} home block {% endcomment %}
+      {% block home %}{% endblock home %}
+      </div>
+    </div>
+
+  </div>
+
+
+
+  {% comment %} JS Scripts {% endcomment %}
+  <script src="{% static 'core/js/jquery.js' %}"></script>
+  <script src="{% static 'core/js/popper.js' %}"></script>
+  <script src="{% static 'core/js/all.min.js' %}"></script>
+  <script src="{% static 'core/js/bootstrap.js' %}"></script>
+</body>
+
+</html>
